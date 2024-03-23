@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My First Blog</title>
-    <link rel="stylesheet" href="assets/css/styles.css"/>
-    <link rel="stylesheet" href="assets/css/form.css"/>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/form.css" />
+  </head>
+  <body>
+    <header>
+        <input type="checkbox" id="darkmode-toggle"/>
+        <label for="darkmode-toggle"></label>
+    </header>
+    <main>
+            <h1>My First Blog</h1>
+            <form>
+                <input type="text" class="blog-input" id="blogUsername" placeholder="Username"/>
+                <input type="text" class="blog-input" id="blogTitle" placeholder="Title"/>
+                <textarea class="blog-textarea" id="blogContent" placeholder="Content"></textarea>
+            </form>
+    </main>
+    <footer>
+        <p>Made with 🫶🏻 by Daniela Leal</p>
+    </footer>
     <script src="assets/js/logic.js"></script>
     <script src="assets/js/form.js"></script>
-</body>
+  </body>
 </html>
