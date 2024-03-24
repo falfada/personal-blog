@@ -23,7 +23,13 @@ body {
   min-height: 100%;
   line-height: 1;
   font-family: "PT Serif", serif;
+  transition: all .3 ease;
+}
+body.light{
   background-color: var(--lightgrey);
+}
+body.dark{
+  background-color: var(--backgroundBlack);
 }
 
 h1,
@@ -89,6 +95,7 @@ label.darkmode-button::after {
 #darkmode-toggle:checked + label.darkmode-button {
   background-color: #2b4162;
   background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  border: .1px solid var(--lightgrey);
 }
 #darkmode-toggle:checked + label.darkmode-button::after {
   background: var(--white);
