@@ -1,0 +1,73 @@
+a.button{
+    background: var(--darkgrey);
+    color: var(--white);
+    text-decoration: none;
+    padding: .5rem 1.5rem .5rem 2.5rem;
+    border-radius: 50px;
+    position: relative;
+    transition: all .3s ease;
+}
+a.button::before{
+    content: '\27F5';
+    position: absolute;
+    top: 45%;
+    left: 1rem;
+    line-height: 0;
+    transition: all .3s ease;
+}
+a.button:hover::before{
+    left: .8rem;
+}
+
+body.dark a.button{
+    background: var(--white);
+    color: var(--darkgrey);
+}
+.posts-container{
+    width: 100%;
+    padding: 0 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+}
+.post-item{
+    background: var(--white);
+    box-shadow: 0 10px 25px var(--lightgrey);
+    padding: 3rem 1.5rem;
+    transition: all .3s ease;
+}
+.post-title{
+    position: relative;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    transition: all .3s ease;
+}
+.post-title::after{
+    content: '';
+    width: 30%;
+    height: 2px;
+    background: var(--raspberry);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: all .3s ease;
+}
+.post-content{
+    line-height: 1.5;
+    transition: all .3s ease;
+}
+.post-user{
+    color: var(--grey);
+    margin-top: .5rem;
+}
+body.dark .post-item{
+    background: var(--black);
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+}
+body.dark .post-content{
+    color: var(--white);
+}
+body.dark .post-title::after{
+    background: var(--cyan);
+}
