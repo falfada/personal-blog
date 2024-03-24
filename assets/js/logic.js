@@ -2,8 +2,6 @@
 const themeToggle = document.getElementById('darkmode-toggle');
 const bodyContainer = document.body;
 
-console.log(bodyContainer);
-
 let mode = "light";
 
 themeToggle.addEventListener("click", function(){
