@@ -1,0 +1,73 @@
+form{
+    width: 100%;
+    padding: 0 2rem;
+    margin-top: 4rem;
+}
+input.blog-input{
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid var(--grey);
+    color: var(--grey);
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    transition: all .3s ease;
+}
+input.blog-input::placeholder{
+    color: var(--grey);
+}
+
+input.blog-input:focus-visible{
+    outline: none;
+    border-bottom: 2px solid var(--raspberry);
+}
+textarea.blog-textarea{
+    appearance: none;
+    border: none;
+    border-bottom: 1px solid var(--grey);
+    color: var(--grey);
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    resize: none;
+}
+textarea.blog-textarea::placeholder{
+    color: var(--grey);
+}
+textarea.blog-textarea:focus-visible{
+    outline: none;
+    border-bottom: 2px solid var(--raspberry);
+}
+button.blog-submit{
+    outline: none;
+    border: 1px solid var(--grey);
+    color: var(--grey);
+    background: none;
+    border-radius: 50px;
+    padding: .5rem 2.5rem;
+    margin-top: 2.5rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+button.blog-submit:hover{
+    background: var(--darkgrey);
+    color: var(--white);
+    border: 1px solid var(--darkgrey);
+}
+body.dark input.blog-input:focus-visible{
+    outline: none;
+    border-bottom: 2px solid var(--cyan);
+}
+body.dark button.blog-submit:hover{
+    background: var(--white);
+    color: var(--darkgrey);
+    border: 1px solid var(--white);
+}
+body.dark textarea.blog-textarea:focus-visible{
+    outline: none;
+    border-bottom: 2px solid var(--cyan);
+}
