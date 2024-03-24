@@ -15,19 +15,44 @@
   </head>
   <body>
     <header>
-        <input type="checkbox" id="darkmode-toggle"/>
-        <label for="darkmode-toggle" class="darkmode-button"></label>
+      <input type="checkbox" id="darkmode-toggle" />
+      <label for="darkmode-toggle" class="darkmode-button"></label>
     </header>
     <main>
-            <h1>My First Blog</h1>
-            <form>
-                <input type="text" class="blog-input" id="blogUsername" placeholder="Username"/>
-                <input type="text" class="blog-input" id="blogTitle" placeholder="Title"/>
-                <textarea class="blog-textarea" id="blogContent" placeholder="Content"></textarea>
-            </form>
+      <h1>My First Blog</h1>
+      <form>
+        <label for="blogUsername"></label>
+        <input
+          type="text"
+          class="blog-input"
+          id="blogUsername"
+          placeholder="Username"
+        />
+        <label for="blogTitle"></label>
+        <input
+          type="text"
+          class="blog-input"
+          id="blogTitle"
+          placeholder="Title"
+        />
+        <label for="blogContent"></label>
+        <textarea
+          class="blog-textarea"
+          id="blogContent"
+          placeholder="Content"
+        ></textarea>
+      </form>
     </main>
     <footer>
-        <p>Made with 🫶🏻 by Daniela Leal</p>
+      <p>Made with 🫶🏻 by Daniela Leal</p>
+      <div class="social-links">
+        <a href="https://dribbble.com/falfada" target="_blank">
+          <img src="assets/img/dribbble-icon.svg" alt="Dribbble Icon"/>
+        </a>
+        <a href="https://github.com/falfada" target="_blank">
+          <img src="assets/img/github-icon.svg" alt="Github Icon"/>
+        </a>
+      </div>
     </footer>
     <script src="assets/js/logic.js"></script>
     <script src="assets/js/form.js"></script>

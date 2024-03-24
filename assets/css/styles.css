@@ -100,3 +100,38 @@ label.darkmode-button::after {
     height: 0;
     visibility: hidden;
 }
+/* Header */
+header{
+  width: 100%;
+  padding: .5rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Footer */
+footer{
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+}
+footer::after{
+  content: '';
+  width: 100px;
+  height: 2px;
+  border-radius: 8px;
+  background: var(--black);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.social-links{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.social-links img{
+  width: 24px;
+}
