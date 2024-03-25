@@ -23,7 +23,7 @@ body.dark a.button{
     background: var(--white);
     color: var(--darkgrey);
 }
-.posts-container{
+#posts-container{
     width: 100%;
     padding: 0 2rem;
     display: grid;
@@ -61,6 +61,7 @@ body.dark a.button{
     color: var(--grey);
     margin-top: .5rem;
 }
+/* Dark Mode */
 body.dark .post-item{
     background: var(--black);
     box-shadow: 0 10px 25px rgba(0,0,0,.15);

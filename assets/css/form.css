@@ -58,6 +58,7 @@ button.blog-submit:hover{
     color: var(--white);
     border: 1px solid var(--darkgrey);
 }
+/* Dark Mode */
 body.dark input.blog-input:focus-visible{
     outline: none;
     border-bottom: 2px solid var(--cyan);
