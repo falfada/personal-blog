@@ -12,7 +12,7 @@ function renderBlogInfo() {
     //Applying CSS styles to HTML elements
     postItemContainer.classList.add("post-item");
     postTitle.classList.add("post-title");
-    postTitle.classList.add("post-content");
+    postContent.classList.add("post-content");
     postUser.classList.add("post-user");
 
     //Adding text content to each post

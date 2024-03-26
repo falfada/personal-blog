@@ -185,3 +185,22 @@ body.dark .social-links a{
   border-radius: 50%;
   padding: .5rem;
 }
+
+/* Tablet Screen */
+@media screen and (max-width: 768px){
+  h1.home-title{
+    font-size: 8rem;
+    padding: 0 5rem;
+  }
+  h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+/* Mobile Screen */
+@media screen and (max-width: 600px){
+  h1.home-title{
+    font-size: 6rem;
+    padding: 0 2rem;
+  }
+}

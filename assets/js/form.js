@@ -21,7 +21,7 @@ function storeBlogInfo(event) {
   const titleValue = blogTitle.value;
   const contentValue = blogContent.value;
   if (userValue === "") {
-    displayMessage("error", "Email cannot be blank");
+    displayMessage("error", "Username cannot be blank");
   } else if (titleValue === "") {
     displayMessage("error", "Title cannot be blank");
   } else if (contentValue === "") {
