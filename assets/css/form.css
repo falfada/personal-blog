@@ -58,6 +58,15 @@ button.blog-submit:hover{
     color: var(--white);
     border: 1px solid var(--darkgrey);
 }
+#errorMessage{
+    transition: all .3s ease;
+}
+#errorMessage.error{
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 2px solid var(--raspberry);
+    background: rgba(218, 65, 103, .4);
+}
 /* Dark Mode */
 body.dark input.blog-input:focus-visible{
     outline: none;
@@ -71,4 +80,7 @@ body.dark button.blog-submit:hover{
 body.dark textarea.blog-textarea:focus-visible{
     outline: none;
     border-bottom: 2px solid var(--cyan);
+}
+body.dark #errorMessage.error{
+    color: var(--white);
 }
